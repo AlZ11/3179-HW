@@ -1,0 +1,31 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": "container",
+	"height": 400,
+	"title": null,
+	"data": { "values": [] },
+	"mark": "bar",
+	"encoding": {
+		"x": {
+			"field": "region",
+			"type": "nominal",
+			"axis": { "title": "Region", "labelAngle": -45 }
+		},
+		"y": {
+			"field": "percentage",
+			"type": "quantitative",
+			"axis": { "title": "Percentage of Population" }
+		},
+		"color": {
+			"field": "age_group",
+			"type": "nominal",
+			"scale": { "scheme": "tableau10" },
+			"legend": { "title": "Age Group" }
+		},
+		"tooltip": [
+			{ "field": "region", "type": "nominal", "title": "Region" },
+			{ "field": "age_group", "type": "nominal", "title": "Age Group" },
+			{ "field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f" }
+		]
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": "container",
+	"height": 400,
+	"title": null,
+	"data": { "values": [] },
+	"transform": [
+		{
+			"filter": {
+				"field": "country",
+				"oneOf": ["China", "India", "United States", "Indonesia", "Brazil", "Pakistan"]
+			}
+		}
+	],
+	"mark": { "type": "line", "point": true, "strokeWidth": 2 },
+	"encoding": {
+		"x": {
+			"field": "year",
+			"type": "temporal",
+			"axis": { "title": "Year", "format": "%Y" }
+		},
+		"y": {
+			"field": "population",
+			"type": "quantitative",
+			"axis": { "title": "Population", "format": ".2s" }
+		},
+		"color": {
+			"field": "country",
+			"type": "nominal",
+			"scale": { "scheme": "category10" },
+			"legend": { "title": "Country" }
+		},
+		"opacity": {
+			"condition": { "selection": "country_select", "value": 1 },
+			"value": 0.2
+		},
+		"tooltip": [
+			{ "field": "country", "type": "nominal", "title": "Country" },
+			{ "field": "year", "type": "temporal", "title": "Year", "format": "%Y" },
+			{ "field": "population", "type": "quantitative", "title": "Population", "format": "," }
+		]
+	},
+	"selection": {
+		"country_select": {
+			"type": "multi",
+			"fields": ["country"]
+		}
+	}
+}

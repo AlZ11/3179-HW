@@ -1,0 +1,118 @@
+country,continent,population,gdp_per_capita,life_expectancy
+India,Asia,1463865525,2612,70.8
+China,Asia,1416096094,13136,78.2
+United States,North America,347275807,80035,78.9
+Indonesia,Asia,285721236,4914,71.7
+Pakistan,Asia,255219554,1680,67.3
+Nigeria,Africa,237527782,2184,54.7
+Brazil,South America,220000000,9673,75.9
+Bangladesh,Asia,175686899,2688,72.4
+Russia,Europe,144000000,15345,72.6
+Ethiopia,Africa,136000000,1098,66.2
+Mexico,North America,132000000,11497,75.1
+Japan,Asia,123951692,39285,84.8
+Philippines,Asia,118000000,3905,71.2
+Vietnam,Asia,99500000,4623,75.4
+Egypt,Africa,113000000,4295,71.8
+Turkey,Asia,86000000,10674,77.7
+Germany,Europe,84552242,51383,81.3
+Iran,Asia,87500000,5305,76.7
+Thailand,Asia,71800000,7233,77.8
+United Kingdom,Europe,67000000,47202,81.3
+France,Europe,68000000,44995,82.7
+Italy,Europe,59000000,35657,83.6
+South Africa,Africa,63000000,6994,64.1
+Tanzania,Africa,68000000,1192,66.2
+Kenya,Africa,58000000,2099,66.7
+Uganda,Africa,51000000,1046,63.4
+Algeria,Africa,46500000,4106,76.9
+Sudan,Africa,50000000,1016,65.3
+Ukraine,Europe,37000000,4828,71.6
+Iraq,Asia,45500000,5955,70.6
+Afghanistan,Asia,42000000,368,64.8
+Poland,Europe,37700000,18742,77.9
+Canada,North America,39858480,52791,82.7
+Morocco,Africa,38500000,3795,76.9
+Saudi Arabia,Asia,36400000,30437,76.9
+Uzbekistan,Asia,36000000,2255,71.7
+Peru,South America,33600000,7126,76.7
+Angola,Africa,37000000,2136,61.6
+Malaysia,Asia,34200000,12451,76.2
+Mozambique,Africa,33500000,506,60.9
+Ghana,Africa,34100000,2445,64.1
+Yemen,Asia,35000000,665,66.1
+Nepal,Asia,30900000,1336,70.8
+Venezuela,South America,28800000,4167,72.1
+Madagascar,Africa,31200000,505,66.7
+Cameroon,Africa,28600000,1662,60.3
+Ivory Coast,Africa,29400000,2549,59.3
+Niger,Africa,27200000,590,62.4
+Australia,Oceania,26600000,64491,83.3
+North Korea,Asia,26100000,583,72.3
+Sri Lanka,Asia,21800000,4065,76.4
+Burkina Faso,Africa,23200000,893,61.6
+Mali,Africa,23300000,916,59.3
+Romania,Europe,19000000,16324,75.6
+Malawi,Africa,21500000,636,64.3
+Chile,South America,19600000,16265,80.2
+Kazakhstan,Asia,20400000,11239,73.1
+Zambia,Africa,20600000,1321,63.9
+Guatemala,North America,18400000,5473,74.3
+Ecuador,South America,18000000,6368,77.0
+Syria,Asia,19400000,2807,72.7
+Netherlands,Europe,17500000,58292,82.2
+Senegal,Africa,18300000,1607,68.1
+Cambodia,Asia,16800000,1785,69.8
+Chad,Africa,18300000,714,54.2
+Belgium,Europe,11800000,51768,81.8
+Czech Republic,Europe,10900000,27191,79.4
+Greece,Europe,10300000,20867,80.1
+Hungary,Europe,9600000,19283,76.0
+Sweden,Europe,10500000,60239,83.0
+Austria,Europe,9100000,53859,81.7
+Switzerland,Europe,8800000,93720,83.9
+Cyprus,Europe,1300000,32415,81.2
+Israel,Asia,9500000,54930,82.7
+Jordan,Asia,11500000,4405,74.5
+Kuwait,Asia,4900000,29301,78.7
+Lebanon,Asia,5500000,4136,78.9
+Oman,Asia,4600000,19302,77.9
+Qatar,Asia,3000000,88046,80.2
+United Arab Emirates,Asia,10400000,53758,78.7
+Argentina,South America,46900000,12449,76.7
+Bolivia,South America,12500000,3552,71.2
+Colombia,South America,52000000,6651,77.3
+Costa Rica,North America,5300000,13439,80.3
+Cuba,North America,11200000,9296,78.8
+Dominican Republic,North America,11400000,9673,74.1
+El Salvador,North America,6400000,4549,73.3
+Honduras,North America,10600000,2831,75.3
+Jamaica,North America,2800000,5582,74.5
+Nicaragua,North America,7200000,2120,74.5
+Panama,North America,4500000,16993,78.5
+Paraguay,South America,6800000,6285,74.3
+Uruguay,South America,3400000,18802,77.9
+Belarus,Europe,9200000,7302,74.8
+Bulgaria,Europe,6700000,13393,75.1
+Croatia,Europe,3900000,18685,78.5
+Estonia,Europe,1400000,27730,78.8
+Latvia,Europe,1800000,21668,75.3
+Lithuania,Europe,2700000,24645,75.9
+Moldova,Europe,2500000,5813,71.9
+Slovakia,Europe,5500000,22107,77.5
+Slovenia,Europe,2100000,29200,81.3
+Albania,Europe,2800000,6494,78.6
+Bosnia and Herzegovina,Europe,3200000,7164,77.4
+North Macedonia,Europe,2100000,6746,75.8
+Serbia,Europe,6700000,9230,76.0
+Montenegro,Europe,630000,10361,76.9
+Norway,Europe,5500000,106149,83.2
+Denmark,Europe,5900000,68008,81.4
+Finland,Europe,5600000,53754,82.0
+Ireland,Europe,5100000,99152,82.5
+Portugal,Europe,10200000,25065,81.9
+Spain,Europe,47600000,30390,83.6
+New Zealand,Oceania,5200000,48424,82.3
+Singapore,Asia,6000000,82807,83.7
+South Korea,Asia,51800000,34758,83.6
+Taiwan,Asia,23900000,33775,81.0

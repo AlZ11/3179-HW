@@ -1,0 +1,109 @@
+country_id,country,population,continent
+356,India,1463865525,Asia
+156,China,1416096094,Asia
+840,United States,347275807,North America
+360,Indonesia,285721236,Asia
+586,Pakistan,255219554,Asia
+566,Nigeria,237527782,Africa
+76,Brazil,220000000,South America
+50,Bangladesh,175686899,Asia
+643,Russia,144000000,Europe
+231,Ethiopia,136000000,Africa
+484,Mexico,132000000,North America
+392,Japan,123951692,Asia
+608,Philippines,118000000,Asia
+704,Vietnam,99500000,Asia
+818,Egypt,113000000,Africa
+792,Turkey,86000000,Asia
+276,Germany,84552242,Europe
+364,Iran,87500000,Asia
+764,Thailand,71800000,Asia
+826,United Kingdom,67000000,Europe
+250,France,68000000,Europe
+380,Italy,59000000,Europe
+710,South Africa,63000000,Africa
+834,Tanzania,68000000,Africa
+404,Kenya,58000000,Africa
+800,Uganda,51000000,Africa
+12,Algeria,46500000,Africa
+729,Sudan,50000000,Africa
+804,Ukraine,37000000,Europe
+368,Iraq,45500000,Asia
+4,Afghanistan,42000000,Asia
+616,Poland,37700000,Europe
+124,Canada,39858480,North America
+504,Morocco,38500000,Africa
+682,Saudi Arabia,36400000,Asia
+860,Uzbekistan,36000000,Asia
+604,Peru,33600000,South America
+24,Angola,37000000,Africa
+458,Malaysia,34200000,Asia
+508,Mozambique,33500000,Africa
+288,Ghana,34100000,Africa
+887,Yemen,35000000,Asia
+524,Nepal,30900000,Asia
+862,Venezuela,28800000,South America
+450,Madagascar,31200000,Africa
+120,Cameroon,28600000,Africa
+384,Ivory Coast,29400000,Africa
+562,Niger,27200000,Africa
+36,Australia,26600000,Oceania
+408,North Korea,26100000,Asia
+144,Sri Lanka,21800000,Asia
+854,Burkina Faso,23200000,Africa
+466,Mali,23300000,Africa
+642,Romania,19000000,Europe
+454,Malawi,21500000,Africa
+152,Chile,19600000,South America
+398,Kazakhstan,20400000,Asia
+894,Zambia,20600000,Africa
+320,Guatemala,18400000,North America
+218,Ecuador,18000000,South America
+760,Syria,19400000,Asia
+528,Netherlands,17500000,Europe
+686,Senegal,18300000,Africa
+116,Cambodia,16800000,Asia
+148,Chad,18300000,Africa
+56,Belgium,11800000,Europe
+203,Czech Republic,10900000,Europe
+300,Greece,10300000,Europe
+348,Hungary,9600000,Europe
+752,Sweden,10500000,Europe
+40,Austria,9100000,Europe
+756,Switzerland,8800000,Europe
+196,Cyprus,1300000,Europe
+376,Israel,9500000,Asia
+400,Jordan,11500000,Asia
+414,Kuwait,4900000,Asia
+422,Lebanon,5500000,Asia
+512,Oman,4600000,Asia
+634,Qatar,3000000,Asia
+784,United Arab Emirates,10400000,Asia
+887,Yemen,35000000,Asia
+32,Argentina,46900000,South America
+68,Bolivia,12500000,South America
+170,Colombia,52000000,South America
+188,Costa Rica,5300000,North America
+192,Cuba,11200000,North America
+214,Dominican Republic,11400000,North America
+222,El Salvador,6400000,North America
+340,Honduras,10600000,North America
+388,Jamaica,2800000,North America
+558,Nicaragua,7200000,North America
+591,Panama,4500000,North America
+600,Paraguay,6800000,South America
+858,Uruguay,3400000,South America
+112,Belarus,9200000,Europe
+100,Bulgaria,6700000,Europe
+191,Croatia,3900000,Europe
+233,Estonia,1400000,Europe
+428,Latvia,1800000,Europe
+440,Lithuania,2700000,Europe
+498,Moldova,2500000,Europe
+703,Slovakia,5500000,Europe
+705,Slovenia,2100000,Europe
+8,Albania,2800000,Europe
+70,Bosnia and Herzegovina,3200000,Europe
+807,North Macedonia,2100000,Europe
+688,Serbia,6700000,Europe
+499,Montenegro,630000,Europe

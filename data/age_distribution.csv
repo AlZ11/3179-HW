@@ -1,0 +1,31 @@
+region,age_group,percentage
+Africa,0-14,40.5
+Africa,15-24,19.3
+Africa,25-54,31.8
+Africa,55-64,5.2
+Africa,65+,3.2
+Asia,0-14,23.8
+Asia,15-24,15.6
+Asia,25-54,43.2
+Asia,55-64,10.3
+Asia,65+,7.1
+Europe,0-14,15.4
+Europe,15-24,10.8
+Europe,25-54,40.2
+Europe,55-64,13.9
+Europe,65+,19.7
+North America,0-14,18.2
+North America,15-24,13.1
+North America,25-54,39.8
+North America,55-64,13.5
+North America,65+,15.4
+South America,0-14,22.9
+South America,15-24,15.8
+South America,25-54,42.1
+South America,55-64,11.4
+South America,65+,7.8
+Oceania,0-14,19.1
+Oceania,15-24,12.7
+Oceania,25-54,41.3
+Oceania,55-64,13.2
+Oceania,65+,13.7

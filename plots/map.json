@@ -1,0 +1,52 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": "container",
+	"height": 500,
+	"title": null,
+	"data": {
+		"url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+		"format": { "type": "topojson", "feature": "countries" }
+	},
+	"projection": { "type": "equirectangular" },
+	"transform": [
+		{
+			"lookup": "id",
+			"from": {
+				"data": {
+					"values": []
+				},
+				"key": "country_id",
+				"fields": ["country", "population", "continent"]
+			}
+		}
+	],
+	"layer": [
+		{
+			"mark": { "type": "geoshape", "stroke": "white", "strokeWidth": 0.5 },
+			"encoding": {
+				"color": {
+					"field": "population",
+					"type": "quantitative",
+					"scale": { "type": "log", "scheme": "blues" },
+					"legend": { "title": "Population", "format": ".2s" }
+				},
+				"tooltip": [
+					{ "field": "country", "type": "nominal", "title": "Country" },
+					{ "field": "population", "type": "quantitative", "title": "Population", "format": "," },
+					{ "field": "continent", "type": "nominal", "title": "Continent" }
+				],
+				"opacity": {
+					"condition": { "selection": "country_select", "value": 1 },
+					"value": 0.3
+				}
+			},
+			"selection": {
+				"country_select": {
+					"type": "multi",
+					"fields": ["country"],
+					"on": "click"
+				}
+			}
+		}
+	]
+}
