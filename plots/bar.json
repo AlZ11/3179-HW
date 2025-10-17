@@ -3,7 +3,11 @@
 	"width": "container",
 	"height": 400,
 	"title": null,
-	"data": { "url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/world_population.csv" },
+	"data": {
+		"url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/world_population.csv",
+		"format": { "type": "csv", "parse": { "population": "number" } }
+	},
+
 	"transform": [
 		{
 			"window": [{ "op": "rank", "as": "rank" }],
