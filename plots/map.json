@@ -13,7 +13,7 @@
 			"lookup": "id",
 			"from": {
 				"data": {
-					"url": "data/world_population.csv"
+					"url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/world_population.csv"
 				},
 				"key": "country_id",
 				"fields": ["country", "population", "continent"]

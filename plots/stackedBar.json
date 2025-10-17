@@ -3,7 +3,7 @@
 	"width": "container",
 	"height": 400,
 	"title": null,
-	"data": { "values": [] },
+	"data": { "url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/age_distribution.csv" },
 	"mark": "bar",
 	"encoding": {
 		"x": {

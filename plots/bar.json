@@ -3,7 +3,7 @@
 	"width": "container",
 	"height": 400,
 	"title": null,
-	"data": { "values": [] },
+	"data": { "url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/world_population.csv" },
 	"transform": [
 		{
 			"window": [{ "op": "rank", "as": "rank" }],
@@ -11,12 +11,18 @@
 		},
 		{ "filter": "datum.rank <= 15" }
 	],
+	"params": [
+		{
+			"name": "country_select",
+			"select": { "type": "point", "fields": ["country"] }
+		}
+	],
 	"mark": { "type": "bar", "cursor": "pointer" },
 	"encoding": {
 		"y": {
 			"field": "country",
 			"type": "nominal",
-			"sort": "-x",
+			"sort": { "encoding": "x", "order": "descending" },
 			"axis": { "title": null }
 		},
 		"x": {
@@ -31,7 +37,7 @@
 			"legend": { "title": "Continent" }
 		},
 		"opacity": {
-			"condition": { "selection": "country_select", "value": 1 },
+			"condition": { "param": "country_select", "value": 1 },
 			"value": 0.3
 		},
 		"tooltip": [
@@ -39,12 +45,5 @@
 			{ "field": "population", "type": "quantitative", "title": "Population", "format": "," },
 			{ "field": "continent", "type": "nominal", "title": "Continent" }
 		]
-	},
-	"selection": {
-		"country_select": {
-			"type": "multi",
-			"fields": ["country"],
-			"on": "click"
-		}
 	}
 }
