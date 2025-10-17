@@ -13,7 +13,7 @@
 			"lookup": "id",
 			"from": {
 				"data": {
-					"values": []
+					"url": "data/world_population.csv"
 				},
 				"key": "country_id",
 				"fields": ["country", "population", "continent"]

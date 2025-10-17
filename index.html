@@ -300,7 +300,8 @@
 				{ country_id: 70, country: 'Bosnia and Herzegovina', population: 3200000, continent: 'Europe' },
 				{ country_id: 807, country: 'North Macedonia', population: 2100000, continent: 'Europe' },
 				{ country_id: 688, country: 'Serbia', population: 6700000, continent: 'Europe' },
-				{ country_id: 499, country: 'Montenegro', population: 630000, continent: 'Europe' }
+				{ country_id: 499, country: 'Montenegro', population: 630000, continent: 'Europe' },
+				{ country_id: 434, country: 'Libia', population: 7500000, continent: 'Africa' }
 			];
 
 			// Population Trends Data
@@ -1178,7 +1179,7 @@
 			};
 
 			// Embed all visualizations
-			vegaEmbed('#map-viz', mapSpec, {
+			vegaEmbed('#map-viz', 'plots/map.json', {
 				actions: { export: true, source: false, compiled: false, editor: false }
 			});
 
