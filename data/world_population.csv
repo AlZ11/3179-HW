@@ -137,3 +137,7 @@ country_id,country,population,continent
 646,Rwanda,14500000,Africa
 716,Zimbabwe,16900000,Africa
 108,Burundi,13800000,Africa
+country_id,country,population,continent
+598,Papua New Guinea,10500000,Oceania
+328,Guyana,820000,South America
+740,Suriname,636000,South America
