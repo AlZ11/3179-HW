@@ -15,15 +15,6 @@
 			"bind": "legend"
 		}
 	],
-	"transform": [
-		{
-			"window": [{ "op": "rank", "as": "rank" }],
-			"sort": [{ "field": "deaths", "order": "descending" }]
-		},
-		{
-			"filter": "datum.rank <= 15"
-		}
-	],
 	"mark": {
 		"type": "arc",
 		"innerRadius": 80,
@@ -54,6 +45,8 @@
 						"Mental Health & Violence",
 						"Metabolic Disorders",
 						"Neurological Conditions",
+						"Congenital Disorders",
+						"Nutritional Deficiencies",
 						"Other"
 					],
 					"range": [
@@ -66,6 +59,8 @@
 						"#e67e22",
 						"#16a085",
 						"#c0392b",
+						"#d35400",
+						"#8e44ad",
 						"#7f8c8d"
 					]
 				},
