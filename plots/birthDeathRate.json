@@ -1,0 +1,108 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": "container",
+	"height": 500,
+	"title": null,
+	"data": { "url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/birth_death_rates.csv" },
+	"params": [
+		{
+			"name": "continent_filter",
+			"select": { "type": "point", "fields": ["continent"] },
+			"bind": "legend"
+		},
+		{
+			"name": "country_select",
+			"select": { "type": "point", "fields": ["country"], "on": "click" }
+		}
+	],
+	"layer": [
+		{
+			"mark": {
+				"type": "line",
+				"color": "#888888",
+				"strokeDash": [4, 4]
+			},
+			"encoding": {
+				"x": { "datum": 0 },
+				"x2": { "datum": 40 },
+				"y": { "datum": 0 },
+				"y2": { "datum": 40 }
+			}
+		},
+		{
+			"mark": {
+				"type": "text",
+				"align": "left",
+				"baseline": "bottom",
+				"dx": 5,
+				"dy": -5,
+				"fontSize": 12,
+				"fontStyle": "italic",
+				"color": "#666666"
+			},
+			"encoding": {
+				"x": { "datum": 35 },
+				"y": { "datum": 35 },
+				"text": { "datum": "y=x (stable population)" }
+			}
+		},
+		{
+			"mark": {
+				"type": "circle",
+				"stroke": "white",
+				"strokeWidth": 0.5
+			},
+			"encoding": {
+				"x": {
+					"field": "birth_rate",
+					"type": "quantitative",
+					"scale": { "domain": [0, 40] },
+					"axis": { "title": "Birth Rate (per 1,000 people)", "grid": true }
+				},
+				"y": {
+					"field": "death_rate",
+					"type": "quantitative",
+					"scale": { "domain": [0, 20] },
+					"axis": { "title": "Death Rate (per 1,000 people)", "grid": true }
+				},
+				"size": {
+					"field": "population",
+					"type": "quantitative",
+					"scale": { "range": [50, 2000] },
+					"legend": { "title": "Population", "format": ".2s" }
+				},
+				"color": {
+					"condition": {
+						"param": "continent_filter",
+						"field": "continent",
+						"type": "nominal",
+						"scale": {
+							"domain": ["Africa", "Asia", "Europe", "North America", "South America", "Oceania"],
+							"range": ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#a65628"]
+						},
+						"legend": { "title": "Continent" }
+					},
+					"value": "#d3d3d3"
+				},
+				"opacity": {
+					"condition": [
+						{ "param": "continent_filter", "value": 0.8 },
+						{ "param": "country_select", "value": 1 }
+					],
+					"value": 0.1
+				},
+				"strokeWidth": {
+					"condition": { "param": "country_select", "value": 2 },
+					"value": 0.5
+				},
+				"tooltip": [
+					{ "field": "country", "type": "nominal", "title": "Country" },
+					{ "field": "continent", "type": "nominal", "title": "Continent" },
+					{ "field": "birth_rate", "type": "quantitative", "title": "Birth Rate", "format": ".2f" },
+					{ "field": "death_rate", "type": "quantitative", "title": "Death Rate", "format": ".2f" },
+					{ "field": "population", "type": "quantitative", "title": "Population", "format": "," }
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": "container",
+	"height": 500,
+	"title": null,
+	"data": { "url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/death_causes.csv" },
+	"params": [
+		{
+			"name": "cause_select",
+			"select": { "type": "point", "fields": ["cause"], "on": "click" }
+		},
+		{
+			"name": "category_filter",
+			"select": { "type": "point", "fields": ["category"] },
+			"bind": "legend"
+		}
+	],
+	"transform": [
+		{
+			"window": [{ "op": "rank", "as": "rank" }],
+			"sort": [{ "field": "deaths", "order": "descending" }]
+		},
+		{
+			"filter": "datum.rank <= 15"
+		}
+	],
+	"mark": {
+		"type": "arc",
+		"innerRadius": 80,
+		"stroke": "white",
+		"strokeWidth": 2,
+		"padAngle": 0.02,
+		"cornerRadius": 4
+	},
+	"encoding": {
+		"theta": {
+			"field": "deaths",
+			"type": "quantitative",
+			"stack": true
+		},
+		"color": {
+			"condition": {
+				"param": "category_filter",
+				"field": "category",
+				"type": "nominal",
+				"scale": {
+					"domain": [
+						"Cardiovascular Diseases",
+						"Cancers",
+						"Infectious Diseases",
+						"Respiratory Diseases",
+						"Organ Diseases",
+						"Injuries",
+						"Mental Health & Violence",
+						"Metabolic Disorders",
+						"Neurological Conditions",
+						"Other"
+					],
+					"range": [
+						"#e74c3c",
+						"#9b59b6",
+						"#3498db",
+						"#1abc9c",
+						"#f39c12",
+						"#95a5a6",
+						"#e67e22",
+						"#16a085",
+						"#c0392b",
+						"#7f8c8d"
+					]
+				},
+				"legend": { "title": "Category", "orient": "right", "labelLimit": 200 }
+			},
+			"value": "#e0e0e0"
+		},
+		"opacity": {
+			"condition": [
+				{ "param": "category_filter", "value": 1 },
+				{ "param": "cause_select", "value": 1 }
+			],
+			"value": 0.15
+		},
+		"strokeWidth": {
+			"condition": { "param": "cause_select", "value": 3 },
+			"value": 2
+		},
+		"tooltip": [
+			{ "field": "cause", "type": "nominal", "title": "Cause of Death" },
+			{ "field": "category", "type": "nominal", "title": "Category" },
+			{ "field": "deaths", "type": "quantitative", "title": "Annual Deaths", "format": "," },
+			{ "field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f" }
+		]
+	},
+	"view": { "stroke": null }
+}

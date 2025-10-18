@@ -210,6 +210,44 @@ body {
 	margin: 0;
 }
 
+/* Health Insights */
+.health-insights {
+	display: grid;
+	gap: var(--spacing-md);
+	padding: var(--spacing-md);
+}
+
+.insight-item {
+	padding: var(--spacing-md);
+	background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+	border-radius: 12px;
+	border: 1px solid var(--border-color);
+	transition: all 0.3s ease;
+}
+
+.insight-item:hover {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+	border-color: var(--primary-color);
+}
+
+.insight-item h3 {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: var(--text-dark);
+	margin-bottom: var(--spacing-xs);
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-xs);
+}
+
+.insight-item p {
+	font-size: 0.9375rem;
+	color: var(--text-light);
+	line-height: 1.6;
+	margin: 0;
+}
+
 /* Grid Layouts */
 .viz-grid-2 {
 	display: grid;

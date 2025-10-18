@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Global Demographics Dashboard 2024</title>
+		<title>Global Demographics Dashboard</title>
 
 		<!-- Vega, Vega-Lite, and Vega-Embed -->
 		<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -146,6 +146,77 @@
 					</div>
 					<div id="age-viz" class="visualization"></div>
 				</section>
+
+				<!-- Birth Rate vs Death Rate Section -->
+				<section class="viz-section scatter-section">
+					<div class="section-header">
+						<h2>Birth Rate vs Death Rate Analysis</h2>
+						<p class="section-description">
+							Explore the relationship between birth and death rates across countries. Countries above the diagonal line
+							(y=x) have growing populations, while those below have declining populations. Click on the legend to
+							filter by continent.
+						</p>
+					</div>
+					<div id="birth-death-viz" class="visualization"></div>
+					<div class="viz-notes">
+						<p>
+							<strong>Insight:</strong> African countries show high birth rates with moderate death rates, indicating
+							rapid population growth. European countries cluster near the diagonal with low birth rates, reflecting
+							aging populations.
+						</p>
+					</div>
+				</section>
+
+				<!-- Death Causes Section -->
+				<div class="viz-grid-2">
+					<section class="viz-section">
+						<div class="section-header">
+							<h2>Leading Causes of Death Worldwide</h2>
+							<p class="section-description">
+								Interactive donut chart showing the top 15 causes of death globally. Click on the legend to filter by
+								disease category, or click on segments to highlight specific causes.
+							</p>
+						</div>
+						<div id="death-causes-viz" class="visualization"></div>
+					</section>
+
+					<section class="viz-section">
+						<div class="section-header">
+							<h2>Key Health Insights</h2>
+							<p class="section-description">Understanding global mortality patterns</p>
+						</div>
+						<div class="health-insights">
+							<div class="insight-item">
+								<h3>🫀 Cardiovascular Diseases</h3>
+								<p>
+									Ischaemic heart disease and stroke remain the leading causes of death worldwide, accounting for over
+									26% of all deaths combined.
+								</p>
+							</div>
+							<div class="insight-item">
+								<h3>🦠 Infectious Diseases</h3>
+								<p>
+									COVID-19, lower respiratory infections, and tuberculosis represent significant infectious disease
+									challenges, particularly in developing nations.
+								</p>
+							</div>
+							<div class="insight-item">
+								<h3>🎗️ Cancer</h3>
+								<p>
+									Lung, colon, breast, and stomach cancers are among the top killers, with incidence varying
+									significantly by region and lifestyle factors.
+								</p>
+							</div>
+							<div class="insight-item">
+								<h3>🧠 Neurological Conditions</h3>
+								<p>
+									Alzheimer's disease and other dementias are increasingly prevalent as global populations age,
+									affecting millions worldwide.
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
 			</div>
 		</main>
 
@@ -166,8 +237,13 @@
 					</div>
 					<div class="source-card">
 						<h3>Our World in Data</h3>
-						<p>Life expectancy and health indicators</p>
+						<p>Life expectancy, birth rates, death rates, and health indicators</p>
 						<a href="https://ourworldindata.org/" target="_blank">Visit Source →</a>
+					</div>
+					<div class="source-card">
+						<h3>World Health Organization (WHO)</h3>
+						<p>Global health estimates and causes of death statistics</p>
+						<a href="https://www.who.int/data/gho" target="_blank">Visit Source →</a>
 					</div>
 				</div>
 				<!-- <p class="methodology-note">
@@ -182,8 +258,8 @@
 			<div class="container">
 				<p>FIT3179 Data Visualisation 2 | Created with Vega-Lite Authorship and License</p>
 				<p class="footer-note">
-					This work was created by Alex Zhang for FIT3179 Data Visualisation 2, Monash University "date". You may choose
-					to reuse this work under a copyleft license, Please consult with the author before redistributing. This
+					This work was created by Alex Zhang for FIT3179 Data Visualisation 2, Monash University 18/10/2025. You may
+					choose to reuse this work under a copyleft license, Please consult with the author before redistributing. This
 					visualisation is publicly accessible, so all external elements are used with permission or are openly
 					available
 				</p>
@@ -192,7 +268,6 @@
 
 		<!-- Visualization Scripts -->
 		<script type="text/javascript">
-			// Embed all visualizations from external JSON files
 			vegaEmbed('#map-viz', 'plots/map.json', {
 				actions: { export: true, source: false, compiled: false, editor: false }
 			});
@@ -210,6 +285,14 @@
 			});
 
 			vegaEmbed('#age-viz', 'plots/stackedBar.json', {
+				actions: { export: true, source: false, compiled: false, editor: false }
+			});
+
+			vegaEmbed('#birth-death-viz', 'plots/birthDeathRate.json', {
+				actions: { export: true, source: false, compiled: false, editor: false }
+			});
+
+			vegaEmbed('#death-causes-viz', 'plots/deathCauses.json', {
 				actions: { export: true, source: false, compiled: false, editor: false }
 			});
 		</script>

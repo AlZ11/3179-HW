@@ -4,7 +4,7 @@
 	"height": 500,
 	"title": null,
 	"data": { "url": "https://raw.githubusercontent.com/AlZ11/3179-HW/main/data/demographics.csv" },
-	"mark": { "type": "circle", "opacity": 0.7 },
+	"mark": { "type": "circle", "opacity": 0.8, "stroke": "white", "strokeWidth": 0.5 },
 	"encoding": {
 		"x": {
 			"field": "gdp_per_capita",
@@ -25,17 +25,31 @@
 			"legend": { "title": "Population", "format": ".2s" }
 		},
 		"color": {
-			"field": "continent",
-			"type": "nominal",
-			"scale": { "scheme": "category10" },
-			"legend": { "title": "Continent" }
+			"condition": {
+				"param": "continent_select",
+				"field": "continent",
+				"type": "nominal",
+				"scale": {
+					"domain": ["Africa", "Asia", "Europe", "North America", "South America", "Oceania"],
+					"range": ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#a65628"]
+				},
+				"legend": { "title": "Continent" }
+			},
+			"value": "#d3d3d3"
 		},
 		"opacity": {
 			"condition": [
-				{ "selection": "continent_select", "value": 0.8 },
-				{ "selection": "country_select", "value": 1 }
+				{ "param": "continent_select", "value": 1 },
+				{ "param": "country_select", "value": 1 }
 			],
-			"value": 0.1
+			"value": 0.05
+		},
+		"strokeWidth": {
+			"condition": [
+				{ "param": "continent_select", "value": 1.5 },
+				{ "param": "country_select", "value": 2 }
+			],
+			"value": 0.5
 		},
 		"tooltip": [
 			{ "field": "country", "type": "nominal", "title": "Country" },
@@ -45,15 +59,15 @@
 			{ "field": "life_expectancy", "type": "quantitative", "title": "Life Expectancy", "format": ".1f" }
 		]
 	},
-	"selection": {
-		"continent_select": {
-			"type": "multi",
-			"fields": ["continent"],
+	"params": [
+		{
+			"name": "continent_select",
+			"select": { "type": "point", "fields": ["continent"] },
 			"bind": "legend"
 		},
-		"country_select": {
-			"type": "multi",
-			"fields": ["country"]
+		{
+			"name": "country_select",
+			"select": { "type": "point", "fields": ["country"], "on": "click" }
 		}
-	}
+	]
 }

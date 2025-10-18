@@ -1,0 +1,31 @@
+cause,deaths,percentage,category
+Ischaemic Heart Disease,9158203,16.0,Cardiovascular Diseases
+Stroke,6189815,10.8,Cardiovascular Diseases
+Lower Respiratory Infections,2601188,4.5,Infectious Diseases
+Chronic Obstructive Pulmonary Disease,3184645,5.6,Respiratory Diseases
+Trachea Bronchus Lung Cancers,1827000,3.2,Cancers
+Diabetes Mellitus,1517061,2.7,Metabolic Disorders
+Alzheimer Disease and Dementias,2513191,4.4,Neurological Conditions
+Diarrhoeal Diseases,1467516,2.6,Infectious Diseases
+Tuberculosis,1320000,2.3,Infectious Diseases
+Road Injuries,1348033,2.4,Injuries
+Kidney Diseases,1343998,2.3,Organ Diseases
+Liver Diseases,1427038,2.5,Organ Diseases
+Colon and Rectum Cancers,935173,1.6,Cancers
+HIV/AIDS,630542,1.1,Infectious Diseases
+Breast Cancer,684996,1.2,Cancers
+Stomach Cancer,834098,1.5,Cancers
+Malaria,619827,1.1,Infectious Diseases
+Prostate Cancer,427390,0.7,Cancers
+Suicide,703109,1.2,Mental Health & Violence
+Cirrhosis,1395876,2.4,Organ Diseases
+Congenital Anomalies,444438,0.8,Congenital Disorders
+Pancreatic Cancer,466003,0.8,Cancers
+Drowning,235649,0.4,Injuries
+Hypertensive Heart Disease,1271320,2.2,Cardiovascular Diseases
+Meningitis,250032,0.4,Infectious Diseases
+Protein-Energy Malnutrition,289074,0.5,Nutritional Deficiencies
+Falls,684149,1.2,Injuries
+Homicide,407985,0.7,Mental Health & Violence
+COVID-19,6865613,12.0,Infectious Diseases
+Other Causes,9619082,16.8,Other
